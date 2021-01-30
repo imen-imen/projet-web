@@ -1,0 +1,7 @@
+<section>
+  <a routerLink="/addformateur"> <img src='../../../assets/Ajouter.png' width="40px"></a>
+  <mat-list>
+    <h2>Liste Des Formateurs</h2>
+    <app-formateur-item-lis *ngFor="let formateurItem of formateurItems" [formateur]="formateurItem" ></app-formateur-item-lis>
+    </mat-list>
+</section>
